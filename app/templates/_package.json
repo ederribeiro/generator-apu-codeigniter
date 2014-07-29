@@ -12,7 +12,6 @@
     "devDependencies": {
         "grunt": "*",
         "grunt-cli": "*",
-        "grunt-contrib-clean": "*",
         "grunt-contrib-jshint": "*",
         "grunt-contrib-concat": "*",
         "grunt-contrib-uglify": "*",
@@ -21,6 +20,6 @@
         "grunt-contrib-cssmin": "*",
         "grunt-asciify": "*",
         "grunt-bumpup": "*",
-        "grunt-bower-clean": "*"
+        "bower-clean": "*"
     }
 }
