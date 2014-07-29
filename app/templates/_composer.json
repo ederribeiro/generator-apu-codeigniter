@@ -1,0 +1,23 @@
+{
+    "name": "<%= _.slugify(authorName) %>/<%= projectSlug %>",
+    "version": "0.0.0",
+    "authors": [{
+        "name": "<%= authorName %>",
+        "email": "<%= authorEmail %>"
+    }],
+    "config": {
+        "vendor-dir": "application/libraries"
+    },
+    "require": {
+        "mobiledetect/mobiledetectlib": "*",
+        "emberlabs/gravatarlib": "dev-master",
+        "campaignmonitor/createsend-php": "*",
+        "homerjam/emogrify": "*"
+    },
+    "autoload": {
+        "psr-0": {
+            "application": "/application",
+            "libraries": "/application/libraries"
+        }
+    }
+}

@@ -1,0 +1,97 @@
+# BEGIN PRERENDER
+RewriteEngine On
+RewriteBase /
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{HTTP_USER_AGENT} Googlebot|bingbot|Googlebot-Mobile|Baiduspider|Yahoo|YahooSeeker|DoCoMo|Twitterbot|TweetmemeBot|Twikle|Netseer|Daumoa|SeznamBot|Ezooms|MSNBot|Exabot|MJ12bot|sogou\sspider|YandexBot|bitlybot|ia_archiver|proximic|spbot|ChangeDetection|NaverBot|MetaJobBot|magpie-crawler|Genieo\sWeb\sfilter|Qualidator.com\sBot|Woko|Vagabondo|360Spider|ExB\sLanguage\sCrawler|AddThis.com|aiHitBot|Spinn3r|BingPreview|GrapeshotCrawler|CareerBot|ZumBot|ShopWiki|bixocrawler|uMBot|sistrix|linkdexbot|AhrefsBot|archive.org_bot|SeoCheckBot|TurnitinBot|VoilaBot|SearchmetricsBot|Butterfly|Yahoo!|Plukkie|yacybot|trendictionbot|UASlinkChecker|Blekkobot|Wotbox|YioopBot|meanpathbot|TinEye|LuminateBot|FyberSpider|Infohelfer|linkdex.com|Curious\sGeorge|Fetch-Guess|ichiro|MojeekBot|SBSearch|WebThumbnail|socialbm_bot|SemrushBot|Vedma|alexa\ssite\saudit|SEOkicks-Robot|Browsershots|BLEXBot|woriobot|AMZNKAssocBot|Speedy|oBot|HostTracker|OpenWebSpider|WBSearchBot|FacebookExternalHit [NC,OR]
+RewriteCond %{QUERY_STRING} _escaped_fragment_|prerender=1
+RewriteCond %{HTTP_USER_AGENT} !^Prerender
+RewriteRule ^(.*)?$ http://prerender.herokuapp.com/http://%{HTTP_HOST}/$1 [P,L]
+# END PRERENDER
+
+# BEGIN MIME TYPES
+AddType video/ogg .ogv
+AddType video/mp4 .mp4
+AddType video/webm .webm
+AddType image/svg+xml .svg
+AddType application/x-font-woff .woff
+AddType application/vnd.ms-fontobject .eot
+AddType application/octet-stream .otf .ttf
+AddType text/x-component .htc
+# END MIME TYPES
+
+# BEGIN GZIP
+<ifmodule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css text/javascript application/x-javascript application/javascript application/json
+  BrowserMatch ^Mozilla/4 gzip-only-text/html
+  BrowserMatch ^Mozilla/4\.[0678] no-gzip
+  BrowserMatch \bMSIE\s7 !no-gzip !gzip-only-text/html
+  BrowserMatch \bOpera !no-gzip
+</ifmodule>
+# END GZIP
+
+# BEGIN EXPIRES
+<ifModule mod_expires.c>
+  ExpiresActive On
+  ExpiresDefault "access plus 1 seconds"
+  ExpiresByType text/html "access plus 1 seconds"
+  ExpiresByType image/gif "access plus 2592000 seconds"
+  ExpiresByType image/jpeg "access plus 2592000 seconds"
+  ExpiresByType image/png "access plus 2592000 seconds"
+  ExpiresByType image/svg+xml "access plus 2592000 seconds"
+  ExpiresByType application/x-font-woff "access plus 2592000 seconds"
+  ExpiresByType application/vnd.ms-fontobject "access plus 2592000 seconds"
+  ExpiresByType application/octet-stream "access plus 2592000 seconds"
+  ExpiresByType text/plain "access plus 604800 seconds"
+  ExpiresByType text/css "access plus 604800 seconds"
+  ExpiresByType text/javascript "access plus 216000 seconds"
+  ExpiresByType application/x-javascript "access plus 216000 seconds"
+</ifModule>
+# END EXPIRES
+
+# BEGIN CACHE-CONTROL
+<ifModule mod_headers.c>
+  <filesMatch "\\.(ico|pdf|flv|jpg|jpeg|png|gif|swf|svg|woff|eot|ttf|otf)$">
+    Header set Cache-Control "max-age=2592000, public"
+  </filesMatch>
+  <filesMatch "\\.(css)$">
+    Header set Cache-Control "max-age=604800, public"
+  </filesMatch>
+  <filesMatch "\\.(js)$">
+    Header set Cache-Control "max-age=216000, private"
+  </filesMatch>
+  <filesMatch "\\.(xml|txt)$">
+    Header set Cache-Control "max-age=216000, public, must-revalidate"
+  </filesMatch>
+  <filesMatch "\\.(html|htm|php)$">
+    Header set Cache-Control "max-age=1, private, must-revalidate"
+  </filesMatch>
+</ifModule>
+# END CACHE-CONTROL
+
+# BEGIN ETAG
+<ifModule mod_headers.c>
+  Header unset ETag
+</ifModule>
+FileETag None
+# END ETAG
+
+# BEGIN LAST MODIFIED
+<ifModule mod_headers.c>
+  Header unset Last-Modified
+</ifModule>
+# END LAST MODIFIED
+
+# BEGIN ACCESS CONTROL
+<ifModule mod_headers.c>
+  Header set Access-Control-Allow-Origin "*"
+</ifModule>
+# END ACCESS CONTROL
+
+# BEGIN CI
+RewriteEngine On
+RewriteCond %{REQUEST_URI} ^/system.*
+RewriteRule ^(.*)$ index.php?/$1 [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.+)$ index.php?/$1 [L]
+# END CI

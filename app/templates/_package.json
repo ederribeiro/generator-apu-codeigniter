@@ -1,0 +1,26 @@
+{
+    "name": "<%= projectSlug %>",
+    "version": "0.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": "",
+    "author": "<%= authorName %> <<%= authorEmail %>>",
+    "license": "EULA",
+    "devDependencies": {
+        "grunt": "*",
+        "grunt-cli": "*",
+        "grunt-contrib-clean": "*",
+        "grunt-contrib-jshint": "*",
+        "grunt-contrib-concat": "*",
+        "grunt-contrib-uglify": "*",
+        "grunt-contrib-watch": "*",
+        "grunt-contrib-less": "*",
+        "grunt-contrib-cssmin": "*",
+        "grunt-asciify": "*",
+        "grunt-bumpup": "*",
+        "grunt-bower-clean": "*"
+    }
+}

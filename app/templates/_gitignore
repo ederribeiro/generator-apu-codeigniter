@@ -1,0 +1,6 @@
+node_modules
+assets/components
+application/logs
+application/cache/*
+!application/cache/.htaccess
+!application/cache/index.html

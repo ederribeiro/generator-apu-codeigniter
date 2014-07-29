@@ -1,0 +1,32 @@
+{
+    "name": "<%= projectSlug %>",
+    "version": "0.0.0",
+    "authors": [
+        "<%= authorName %> <<%= authorEmail %>>"
+    ],
+    "license": "EULA",
+    "private": true,
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ],
+    "dependencies": {
+        "jquery": "~1.10.2",
+        "modernizr": "*",
+        "lodash": "*",
+        "respond": "*",
+        "momentjs": "*",
+        "bootstrap": "~3.2.0"
+    },
+    "dependenciesIgnore": {
+        "jquery": [
+            "!**/jquery.min.js"
+        ],
+        "modernizr": [
+            "!**/modernizr.js"
+        ]
+    }
+}
