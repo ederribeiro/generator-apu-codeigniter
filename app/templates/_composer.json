@@ -13,7 +13,8 @@
         "emberlabs/gravatarlib": "dev-master",
         "campaignmonitor/createsend-php": "*",
         "homerjam/emogrify": "*",
-        "alexbilbie/mongoqb": "*"
+        "alexbilbie/mongoqb": "*",
+        "twig/twig": "*"
     },
     "autoload": {
         "psr-0": {
