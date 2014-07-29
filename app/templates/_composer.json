@@ -12,7 +12,8 @@
         "mobiledetect/mobiledetectlib": "*",
         "emberlabs/gravatarlib": "dev-master",
         "campaignmonitor/createsend-php": "*",
-        "homerjam/emogrify": "*"
+        "homerjam/emogrify": "*",
+        "alexbilbie/mongoqb": "*"
     },
     "autoload": {
         "psr-0": {

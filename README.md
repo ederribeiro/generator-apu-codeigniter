@@ -1,4 +1,4 @@
-# generator-apu-codeigniter [![Build Status](https://secure.travis-ci.org/ederribeiro/apu-codeigniter.png?branch=master)](https://travis-ci.org/ederribeiro/apu-codeigniter)
+# generator-apu-codeigniter [![Build Status](https://secure.travis-ci.org/ederribeiro/apu-codeigniter.svg?branch=master)](https://travis-ci.org/ederribeiro/apu-codeigniter)
 
 > [Yeoman](http://yeoman.io) generator
 
