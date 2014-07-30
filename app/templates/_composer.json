@@ -15,11 +15,5 @@
         "homerjam/emogrify": "*",
         "alexbilbie/mongoqb": "*",
         "twig/twig": "*"
-    },
-    "autoload": {
-        "psr-0": {
-            "application": "/application",
-            "libraries": "/application/libraries"
-        }
     }
 }
