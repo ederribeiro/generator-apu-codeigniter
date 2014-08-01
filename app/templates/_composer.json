@@ -13,7 +13,6 @@
         "emberlabs/gravatarlib": "dev-master",
         "campaignmonitor/createsend-php": "*",
         "homerjam/emogrify": "*",
-        "alexbilbie/mongoqb": "*",
         "twig/twig": "*"
     }
 }
