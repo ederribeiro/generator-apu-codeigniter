@@ -17,3 +17,7 @@ $ composer update
 
 # Build
 $ grunt build
+
+# Set permissions (maybe you need set permission 777 to application/cache folder)
+$ chmod 777 application/cache
+
