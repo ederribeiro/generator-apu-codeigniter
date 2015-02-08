@@ -15,6 +15,6 @@ $config['template_dir'] = 'templates';
 // The standard views directory
 $config['views_dir'] = APPPATH.'views';
 // Sets the cache directory
-$config['cache_dir'] = APPPATH.'cache/twig';
+$config['cache_dir'] = APPPATH.'cache';
 // Sets the file extensions that will be rendered
 $config['file_extension'] = '.html';
