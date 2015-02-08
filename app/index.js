@@ -13,6 +13,7 @@ var ApuCodeigniterGenerator = yeoman.generators.Base.extend({
         this.on('end', function() {
             if (!this.options['skip-install']) {
                 this.installDependencies();
+                this.spawnCommand('composer', ['install']);
             }
         });
     },
@@ -72,9 +73,6 @@ var ApuCodeigniterGenerator = yeoman.generators.Base.extend({
     projectfiles: function() {
         this.copy('editorconfig', '.editorconfig');
         this.copy('jshintrc', '.jshintrc');
-    },
-    install: function() {
-        this.spawnCommand('composer', ['install']);
     }
 });
 
