@@ -1,5 +1,5 @@
 {
-    "name": "<%= _.slugify(authorName) %>/<%= projectSlug %>",
+    "name": "<%= authorName %>/<%= projectSlug %>",
     "version": "0.0.0",
     "authors": [{
         "name": "<%= authorName %>",
