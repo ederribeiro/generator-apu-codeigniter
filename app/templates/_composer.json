@@ -6,13 +6,9 @@
         "email": "<%= authorEmail %>"
     }],
     "config": {
-        "vendor-dir": "application/libraries"
+        "vendor-dir": "application/third_party"
     },
     "require": {
-        "mobiledetect/mobiledetectlib": "*",
-        "emberlabs/gravatarlib": "dev-master",
-        "campaignmonitor/createsend-php": "*",
-        "homerjam/emogrify": "*",
         "twig/twig": "*"
     }
 }
