@@ -40,7 +40,7 @@ module.exports = function(grunt) {
             appBanner: {
                 text: '<%= pkg.author.split(\' <\')[0] %>',
                 options: {
-                    font: 'doh', // http://www.figlet.org/examples.html
+                    font: 'doh',
                     log: false
                 }
             }
@@ -97,7 +97,6 @@ module.exports = function(grunt) {
                 tasks: ['less']
             }
         },
-
         less: {
             development: {
                 options: {
@@ -109,13 +108,6 @@ module.exports = function(grunt) {
             }
         },
         cssmin: {
-
-            /*combine: {
-                 files: {
-                'css_min/combine.css': ['css/*.css']
-                }
-            },*/
-
             minify: {
                 expand: true,
                 cwd: 'assets/css/',
@@ -135,5 +127,4 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-bumpup');
 
     grunt.registerTask('build', ['less', 'jshint', 'asciify', 'bumpup', 'uglify', 'cssmin']);
-
 };
