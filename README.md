@@ -22,7 +22,7 @@ $ npm install -g generator-apu-codeigniter
 Finally, initiate the generator:
 
 ```bash
-$ yo apu-codeigniter
+$ sudo yo apu-codeigniter
 ```
 
 ## License

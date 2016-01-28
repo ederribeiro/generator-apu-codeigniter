@@ -6,7 +6,7 @@ var yosay = require('yosay');
 var chalk = require('chalk');
 
 
-var ApuCodeigniterGenerator = yeoman.generators.Base.extend({
+var ApuCodeigniterGenerator = yeoman.Base.extend({
     init: function() {
         this.pkg = require('../package.json');
 
