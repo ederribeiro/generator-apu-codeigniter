@@ -14,6 +14,9 @@ var ApuCodeigniterGenerator = yeoman.Base.extend({
             if (!this.options['skip-install']) {
                 this.installDependencies();
                 this.spawnCommand('composer', ['install']);
+                this.spawnCommand('npm', ['install']);
+                this.spawnCommand('bower', ['install']);
+                this.spawnCommand('grunt', ['watch']);
             }
         });
     },

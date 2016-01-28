@@ -16,7 +16,7 @@
     "dependencies": {
         "jquery": "~1.10.2",
         "modernizr": "*",
-        "lodash": "*",
+        "lodash": "~3.0.0",
         "respond": "*",
         "momentjs": "*",
         "bootstrap": "~3.2.0"
