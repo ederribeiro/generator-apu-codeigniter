@@ -1,6 +1,6 @@
 {
     "name": "generator-apu-codeigniter",
-    "version": "0.2.3",
+    "version": "0.2.4",
     "description": "A Yeoman Generator, which sets a new project codeigniter 3 every time it is called.",
     "license": "MIT",
     "main": "app/index.js",
