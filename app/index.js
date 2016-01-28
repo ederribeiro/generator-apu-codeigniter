@@ -22,7 +22,7 @@ var ApuCodeigniterGenerator = yeoman.generators.Base.extend({
         var done = this.async();
 
         // Have Yeoman greet the user.
-        this.log(yosay('Welcome to the marvelous ApuCodeigniter generator!'));
+        this.log(yosay('Welcome to the marvelous ApuCodeigniter3 generator!'));
 
         var prompts = [{
             name: 'authorName',

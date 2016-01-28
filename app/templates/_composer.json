@@ -5,10 +5,10 @@
         "name": "<%= authorName %>",
         "email": "<%= authorEmail %>"
     }],
-    "config": {
-        "vendor-dir": "application/third_party"
-    },
     "require": {
-        "twig/twig": "*"
+        "php": ">=5.2.4"
+    },
+    "require-dev": {
+        "mikey179/vfsStream": "1.1.*"
     }
 }
